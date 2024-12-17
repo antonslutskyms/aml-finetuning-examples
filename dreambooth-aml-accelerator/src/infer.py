@@ -12,7 +12,7 @@ print("Pipeline loaded")
 
 print("Generating image")
 prompt =  sys.argv[3] 
-image = pipe(prompt, num_inference_steps=50).images[0]
+image = pipe(prompt, num_inference_steps=50, guidance_scale=3.5).images[0]
 print("Image generated")
 
 image.save(sys.argv[2])

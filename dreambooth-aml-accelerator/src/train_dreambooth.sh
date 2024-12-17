@@ -18,8 +18,8 @@ accelerate launch --config_file /accelerate.config /diffusers/examples/dreamboot
 --optimizer="AdamW" \
 --lr_scheduler="constant"  \
 --lr_warmup_steps=0 \
---max_train_steps=15  \
+--max_train_steps=50  \
 --validation_prompt="A photo of sks guy in a bucket"  \
---validation_epochs=100 \
+--validation_epochs=10 \
 --seed="0" \
 --learning_rate=1e-5 
